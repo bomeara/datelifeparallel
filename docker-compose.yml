@@ -1,0 +1,19 @@
+version: '3.2'
+services:
+  backend1:
+      image: bomeara/datelifedocker
+  backend2:
+      image: bomeara/datelifedocker
+  backend3:
+      image: bomeara/datelifedocker
+  loadbalancer:
+      build: .
+      tty: true
+      links:
+          - backend1
+          - backend2
+          - backend3
+      ports:
+          - '8080:8080'
+          - '3838:3838'
+          - '80:80'
