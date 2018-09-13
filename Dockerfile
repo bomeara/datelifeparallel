@@ -1,8 +1,8 @@
 # load manager copied from https://codeburst.io/scaling-out-with-docker-and-nginx-8eda9fb1654c
 
 FROM nginx
-# The Dockerfile's author
-LABEL Brian O'Meara
+# The Dockerfile's author. Apostrophes need not apply, apparently.
+LABEL Brian OMeara
 # Copy the configuration file from the current directory and paste
 # it inside the container to use it as Nginx's default config.
 COPY nginx.conf /etc/nginx/nginx.conf
