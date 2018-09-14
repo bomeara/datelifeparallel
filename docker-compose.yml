@@ -6,6 +6,20 @@ services:
       image: bomeara/datelifedocker
   backend3:
       image: bomeara/datelifedocker
+  backend4:
+      image: bomeara/datelifedocker
+  backend5:
+      image: bomeara/datelifedocker
+  backend6:
+      image: bomeara/datelifedocker
+  backend7:
+      image: bomeara/datelifedocker
+  backend8:
+      image: bomeara/datelifedocker
+  backend9:
+      image: bomeara/datelifedocker
+  backend10:
+      image: bomeara/datelifedocker
   loadbalancer:
       build: .
       tty: true
@@ -13,5 +27,13 @@ services:
           - backend1
           - backend2
           - backend3
+          - backend4
+          - backend5
+          - backend6
+          - backend7
+          - backend8
+          - backend9
+          - backend10
+
       ports:
-          - '80:3838'
+          - '80:80'
