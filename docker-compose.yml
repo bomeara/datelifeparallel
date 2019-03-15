@@ -1,25 +1,25 @@
 version: '3.2'
 services:
   backend1:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend2:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend3:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend4:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend5:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend6:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend7:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend8:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend9:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   backend10:
-      image: bomeara/datelifedocker
+      image: bomeara/datelife
   loadbalancer:
       build: .
       tty: true
